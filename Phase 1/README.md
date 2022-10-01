@@ -26,3 +26,56 @@ It's simple.
 We're trying to drum up a proble statement, so we can figure out how the blockchain solves this problem.
 
 ## Big Data Processing
+
+In the Early and Mid 2000s, we had the following processing applications like:
+
+ZooKeeper at Yahoo,
+BigMap and MapReduce at Google,
+Cassandra at Facebook.
+
+And recently, we have Open Source Projects like:
+Hadoop Distributed File System,
+Hadoop MapReduce.
+
+But there are questions that still begged for answers.
+
+1. Who will control the infrastructure when there are multiple players involved?
+E.g Geospatial data shared among multiple governments and private agencies, meteorological department, land agencies etc. - Who will take charge of the data?
+
+2. If you have multiple copies of the data at different locations, how will you know which one is the most up to date?
+
+3. How well can you trust the data?
+If you have generated the data yourself, how will you prove you are the originator?
+How will you handle crash and malicious behaviours during data transfer?
+
+4. How will you monetize the data?
+How do you transfer the rights of the data?
+Can we develop a universal data marketplace? Like electricity or the internet?
+
+To answer these question, we have...
+
+
+## Blockchain Use Case - Shared Control of Big Data
+Blockchain database - control of database infrastructure is shared among entities, within an enterprise, within a consortium, or across the planet.
+
+- BlockchainDB = a blockchain powered database.
+
+Infrastructure can be spread across different locations, the integrity and consistency of the data is ensured through the blockchain.
+
+Now let's consider two uses cases:
+
+1. Say 25 companies decide to share data with each other.
+
+Each Regional office with its own sysadmin controls one NODE of the overall database.
+The entire database is controlled collectively.
+The data is still protected even if one or two sysadmin goes rogue, or a regional office is hacked.
+
+2. The second use case - a data pipeline:
+
+A data pipeline is a means of moving data from one place (the source) to a destination (such as a data warehouse).
+
+Let's take an Iot company that analyzes the weather through an IoT sensor.
+
+So we will have a data pipeline that looks like this:
+
+IoT sensors -> Kafka stream -> Hadoop Storage -> Spark Data cleaning -> MongoDB -> Tableau Analytics
