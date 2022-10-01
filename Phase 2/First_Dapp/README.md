@@ -102,3 +102,110 @@ lite-server
 Go to http://127.0.0.1:3000/ in your browser to see your page!
 
 Your front end is now complete!
+
+  
+#Create a Basic Smart Contract
+
+Now it's time to create a Solidity smart contract.
+
+You can use any editor you like to make the contract. For this tutorial we recommend the online IDE Remix.
+
+Go to Remix
+
+Check out the "Solidity Compiler", and "Deploy and Run Transactions" tabs. If they are not present, enable them in the plugin manager
+
+Create a new solidity file in remix, named mood.sol
+
+Write the contract
+
+Specify the solidity version and add a license
+  
+```
+// SPDX-License-Identifier: MIT
+ pragma solidity ^0.8.1;
+```
+  
+Define the contract
+  
+```
+contract MoodDiary{
+
+ }
+```
+  
+Inside the contract create a variable called mood
+
+```
+  string mood;
+```
+Next, create Read and Write functions
+```
+//create a function that writes a mood to the smart contract
+ function setMood(string memory _mood) public{
+     mood = _mood;
+ }
+
+ //create a function the reads the mood from the smart contract
+ function getMood() public view returns(string memory){
+     return mood;
+ }
+  ```
+  
+  
+  
+  
+And that's it, your code should look like:
+  
+```
+//specify the version of solidity
+pragma solidity ^0.8.1;
+
+/// a simple set and get function for mood defined: 
+
+//define the contract
+contract MoodDiary{
+    
+    //create a variable called mood
+    string mood;
+    
+    //create a function that writes a mood to the smart contract
+    function setMood(string memory _mood) public{
+        mood = _mood;
+    }
+    
+    //create a function the reads the mood from the smart contract
+    function getMood() public view returns(string memory){
+        return mood;
+    }
+}
+ 
+```
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
