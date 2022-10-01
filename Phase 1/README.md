@@ -114,7 +114,25 @@ It's okay to compare thus analogy to bitcoin now because it has the same propert
 
 ![Screenshot 2022-10-01 at 11 16 55](https://user-images.githubusercontent.com/114804772/193405046-8944e1cc-4432-4e39-b050-269b12e15f5c.png)
 
+This is how the players in a blockchain look like. In essence, it is a chain of interconnected nodes. And here are some sentences to note:
+
+- Every node has full copy of the data.
+
+- New nodes appear and existing ones disappear all the time.
+
+- Each node runs the same software to verify data blocks.
+
+- Each node is connected to only a few other nodes.
+
+- There's no trusted node.
+
+Goal of the blockchain: Having a single truth about data that can be verified by everyone.
+
 ![Screenshot 2022-10-01 at 11 17 21](https://user-images.githubusercontent.com/114804772/193405070-be0a28ef-2a9f-4fb3-9e8a-cd049900055a.png)
+
+Here are the 3 major promises of the blockchain.
+
+![Screenshot 2022-10-01 at 11 31 30](https://user-images.githubusercontent.com/114804772/193405649-8c0c74cf-f7d3-4999-bb07-1b409f587a0c.png)
 
 
 
