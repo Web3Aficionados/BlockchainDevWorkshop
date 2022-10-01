@@ -79,3 +79,42 @@ Let's take an Iot company that analyzes the weather through an IoT sensor.
 So we will have a data pipeline that looks like this:
 
 IoT sensors -> Kafka stream -> Hadoop Storage -> Spark Data cleaning -> MongoDB -> Tableau Analytics
+
+Before each data pipeline step starts, the input data is timestamped as follows:
+
+-Create a transaction(a hash of the data and the metadata)
+
+-Cryptographically signs the transaction.
+
+-Write the transaction to the blockchain database - this will time-stamp the transaction.
+
+This will allow us have an IMMUTABLE evidence that you had access to the data at that point of time.
+
+##BigChain DB Features
+
+-Decentralization: No single point of control, no single point of failure.
+-Query: You can write aand run any MongoDB query over the database.
+-Immutability: Once stored, data can’t be changed or deleted.
+-Byzantine Fault Tolerance: Up to one third of the nodes in the network can experience arbitrary faults.
+-Low latency: Transaction finality happens first.
+-Customizable: You can design you own private network.
+-Rich permissioning: You can set permissions at the transaction level.
+
+At this point, we've painted a picture of 25 companies deciding to share data with each other, so that everyone has shared control.
+
+It's okay to compare thus analogy to bitcoin now because it has the same properties with BigChainDB
+
+-Decentralization
+-Query
+-Immutability
+-Byzantine Fault Tolerance
+-Low latency
+-Customizable
+-Rich permissioning
+
+![Screenshot 2022-10-01 at 11 16 55](https://user-images.githubusercontent.com/114804772/193405046-8944e1cc-4432-4e39-b050-269b12e15f5c.png)
+
+![Screenshot 2022-10-01 at 11 17 21](https://user-images.githubusercontent.com/114804772/193405070-be0a28ef-2a9f-4fb3-9e8a-cd049900055a.png)
+
+
+
