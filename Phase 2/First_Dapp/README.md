@@ -104,7 +104,7 @@ Go to http://127.0.0.1:3000/ in your browser to see your page!
 Your front end is now complete!
 
   
-#Create a Basic Smart Contract
+# Create a Basic Smart Contract
 
 Now it's time to create a Solidity smart contract.
 
